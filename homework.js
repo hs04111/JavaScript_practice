@@ -160,8 +160,7 @@ function submitCountry(){
 function showCountry(text){
   // localStorage에 저장된 option이 메뉴 첫번째로 나오게 하는 함수
   const selectedOption = document.querySelector(`select.js-select option[value=${text}]`);
-  console.log(selectedOption)
- selectedOption.setAttribute("selected","")
+  selectedOption.setAttribute("selected","")
 }
 
 
@@ -181,3 +180,4 @@ function init(){
 }
 
 init();
+
