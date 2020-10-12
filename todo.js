@@ -6,7 +6,7 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
-function deleteTodo(event) {
+function deleteToDo(event) {
   const btn = event.target;
   const li = btn.parentNode;
   toDoList.removeChild(li);
@@ -24,15 +24,15 @@ function saveToDos() {
 function paintToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
-  delBtn.innerText = "❌";
-  delBtn.addEventListener("click", deleteTodo);
   const span = document.createElement("span");
   const newId = toDos.length + 1;
+  delBtn.innerText = "❌";
+  delBtn.addEventListener("click", deleteToDo);
   span.innerText = text;
   li.appendChild(delBtn);
   li.appendChild(span);
-  toDoList.appendChild(li);
   li.id = newId;
+  toDoList.appendChild(li);
   const toDoObj = {
     text: text,
     id: newId,
