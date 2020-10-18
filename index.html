@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="js-clock">
+    <div class="js-clock clock">
       <h1>00:00</h1>
     </div>
-    <form class="js-form form">
+    <form class="js-form form form_css">
       <input type="text" placeholder="What is your name?" />
     </form>
 
     <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do " />
+    <form class="js-pendingToDoForm form_css small_form_size showing">
+      <input type="text" placeholder="Write a to do" />
     </form>
-    <ul class="js-toDoList"></ul>
+    <div class="to_do_lists">
+      <ul class="js-pendingToDoList to_do_ul">
+        <span class="to_do_list__title">PENDING</span>
+      </ul>
+      <ul class="js-finishedToDoList to_do_ul">
+        <span class="to_do_list__title">FINISHED</span>
+      </ul>
+    </div>
+    <div class="transparent_grey_bg"></div>
+    <span class="js-weather weather"></span>
+    <span class="made_by">Made by hs04111</span>
 
-    <script src="gretting.js"></script>
+    <script src="greeting.js"></script>
     <script src="clock.js"></script>
-    <script src="todo.js"></script>
+    <script src="pendingFinishedToDo.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
   </body>
 </html>
