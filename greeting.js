@@ -34,7 +34,7 @@ function paintGreeting(text) {
   greeting.classList.add(SHOWING_CN);
   if (hours > 6 && hours < 12) {
     greeting.innerText = `Good Morning, ${text}!`;
-  } else if (hours > 12 && hours < 19) {
+  } else if (hours >= 12 && hours < 19) {
     greeting.innerText = `Good Afternoon, ${text}!`;
   } else if (hours > 19 || hours < 6) {
     greeting.innerText = `Good Night, ${text}!`;
